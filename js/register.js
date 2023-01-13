@@ -23,6 +23,7 @@ function validation(user) {
 
 }
 
+
 let inputFName = $("#txtFname")
 let inputLName = $("#txtLname")
 let inputEmail = $("#txtEmail")

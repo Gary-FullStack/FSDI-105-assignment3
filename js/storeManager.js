@@ -4,7 +4,7 @@ function saveUser(user) {
 	oldUsers.push(user);
 	let val = JSON.stringify(oldUsers);
 	console.log(val);
-	localStorage.setItem("user", val);
+	localStorage.setItem("users", val);
 
 }
 
@@ -22,4 +22,5 @@ function readUsers() {
 
 	}
 }
+
 
