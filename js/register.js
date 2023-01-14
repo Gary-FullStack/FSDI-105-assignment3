@@ -1,5 +1,5 @@
 
-function User(fName, lName, email, password, gender, age, address, phone, color) {
+function User(fName, lName, email, password, gender, age, address, phone, pay, color) {
 	this.firstName = fName;
 	this.lastName = lName;
 	this.email = email;
@@ -8,6 +8,7 @@ function User(fName, lName, email, password, gender, age, address, phone, color)
 	this.age = age;
 	this.address = address;
 	this.phone = phone;
+	this.pay = pay;
 	this.color = color;
 
 }
@@ -31,13 +32,14 @@ let inputPassword = $("#txtPassword")
 let inputGender = $("#txtGender")
 let inputAge = $("#txtAge")
 let inputAddress = $("#txtAddress")
+let inputPay = $("#txtPay")
 let inputPhone = $("#txtPhone")
 let inputColor = $("#txtColor")
 
 
 function register() {
 
-	let newUser = new User(inputFName.val(), inputLName.val(), inputEmail.val(), inputPassword.val(), inputGender.val(), inputAge.val(), inputAddress.val(), inputPhone.val(), inputColor.val());
+	let newUser = new User(inputFName.val(), inputLName.val(), inputEmail.val(), inputPassword.val(), inputGender.val(), inputAge.val(), inputAddress.val(), inputPhone.val(), inputPay.val(), inputColor.val());
 
 	if (validation(newUser) == true) {
 		saveUser(newUser);
